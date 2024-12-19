@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Requests</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #26404d;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #828582;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        img {
+            height: 100;
+            width: 90px;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Apartment Maintenance Requests</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="details.html">Details</a>
+            <a href="events.html">Events</a>
+            <a href="maintenance.html">Maintenance</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Report a Maintenance Issue</h2>
+            <form action="submit_maintenance_request.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="apartment">Apartment Number:</label>
+                <input type="text" id="apartment" name="apartment" required>
+
+                <label for="issue">Describe the Issue:</label>
+                <textarea id="issue" name="issue" required></textarea>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Available Facilities</h2>
+            <p>We offer a range of facilities to enhance your living experience:</p>
+            <ul>
+                <li>24/7 Security Services</li>
+                <li>Swimming Pool</li>
+                <li>Gym and Fitness Center</li>
+                <li>Community Lounge</li>
+                <li>Parking Spaces</li>
+                <li>Laundry Facilities</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact Maintenance Team</h2>
+            <p>If you have any questions or need immediate assistance, please contact our maintenance team:</p>
+            <p>Email: <a href="mailto:maintenance@alpinetulips.com">maintenance@alpinetulips.com</a></p>
+            <p>Phone: <a href="tel:+9380617117">+91 9380617117</a></p>
+        </section>
+
+        <section>
+            <h2> Our Maintenance Team</h ```html
+            <h2>Image of Our Maintenance Team</h2>
+            <img src="plumber.avif" alt="Our Maintenance Team" style="width: 100%; max-width: 600px;">
+            <p>Description: Our dedicated maintenance team is here to assist you with any issues you may encounter in your apartment. Whether it's a leaky faucet, a malfunctioning appliance, or a heating problem, we understand that timely and effective maintenance is crucial for your comfort and peace of mind. Our skilled technicians are available around the clock to address your concerns promptly and efficiently. We pride ourselves on our quick response times and our commitment to ensuring that your living experience is as enjoyable as possible.
+
+                If you have a maintenance request, simply reach out to our office, and we will schedule a visit at your convenience. Your satisfaction is our top priority, and we strive to maintain a safe and pleasant environment for all our residents. We also encourage you to report any maintenance issues as soon as they arise, as early intervention can prevent more significant problems down the line. Thank you for choosing Alpine Tulip Apartments; we are here to make your home a better place!.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Alpine Tulip Apartments. All rights reserved.</p>
+    </footer>
+</body>
+</html>
